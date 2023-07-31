@@ -318,3 +318,12 @@ BEGIN
     :new.modyfikujacy := COALESCE(SYS_CONTEXT('APEX$SESSION', 'APP_USER'), USER);
 END trenerzy_nagrody_biu;
 /
+
+
+ALTER TABLE szkolenia
+    ADD opis VARCHAR2(1000)
+/
+
+ALTER TABLE szkolenia_uczestnicy
+    ADD username VARCHAR2(255)
+/
